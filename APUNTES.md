@@ -261,3 +261,210 @@ Nunca dejar encendida una instancia de aws que no se va a utilizar, por lo que d
 ![](imagenes/17.PNG)
 
 ![](imagenes/18.PNG)
+
+# 21. RDS (Relational Database service)
+
+Amazon RDS (Relational Database Service) es un servicio gestionado en la nube proporcionado por AWS (Amazon Web Services) que facilita la configuración, operación y escalado de bases de datos relacionales en la nube. Ofrece una capacidad económica y redimensionable mientras maneja tareas de administración de bases de datos tediosas, permitiendo así que te concentres en tus aplicaciones y negocios.
+
+**¿Para qué se usa Amazon RDS?**
+Amazon RDS se utiliza para ejecutar bases de datos relacionales sin la necesidad de dedicar tiempo y recursos a la administración de hardware y al software de base de datos. Algunas de las tareas de administración que RDS automatiza incluyen:
+
+- **Provisionamiento de Hardware:** Automáticamente configura la infraestructura de hardware necesaria para ejecutar tu instancia de base de datos.
+- **Configuración de la Base de Datos:** Permite seleccionar el motor de base de datos y configurarla según las necesidades de tu aplicación.
+- **Parches de Software:** Automáticamente aplica parches al software del motor de base de datos. Los parches de software son actualizaciones que los desarrolladores de software liberan para sus programas. Estas actualizaciones pueden contener correcciones de errores, mejoras en el rendimiento, actualizaciones de seguridad, y nuevas funcionalidades. En el contexto de las bases de datos, estos parches son cruciales porque pueden abordar vulnerabilidades de seguridad y otros problemas críticos que podrían afectar la estabilidad, el rendimiento, o la seguridad de la base de datos.
+- **Backups y Snapshots:** Realiza backups de tu base de datos y permite restaurar a un punto en el tiempo o crear snapshots que puedes mantener para recuperación de desastres.
+- **Escalabilidad:** Puedes escalar los recursos de computación y almacenamiento asociados con tus instancias de base de datos de manera fácil y rápida.
+- **Alta Disponibilidad:** Ofrece opciones para implementar réplicas de bases de datos en diferentes zonas de disponibilidad para aumentar la durabilidad y la disponibilidad.
+
+**Ejemplos de Uso de Amazon RDS**
+
+**Aplicaciones Web y Móviles:** Amazon RDS puede ser utilizado para soportar la capa de datos de aplicaciones web y móviles, proporcionando una base de datos escalable y de alta disponibilidad. Por ejemplo, una aplicación de comercio electrónico podría utilizar RDS para almacenar información sobre productos, inventario, y transacciones de usuarios.
+
+# 22. Documentdb
+
+En los servicos que proporciona amazon tenemos varios relacionados a base de datos, una de ellas es Document DB
+
+![](imagenes/19.PNG)
+
+Amazon DocumentDB es un servicio de base de datos de documentos ofrecido por Amazon Web Services (AWS) que está diseñado para ser compatible con cargas de trabajo que utilizan MongoDB, un popular sistema de gestión de bases de datos de documentos NoSQL. DocumentDB está diseñado para ofrecer una escalabilidad, durabilidad y seguridad mejoradas mientras maneja grandes cantidades de datos.
+
+**¿Qué es una Base de Datos de Documentos?**
+
+Una base de datos de documentos almacena datos en formato de documento, generalmente en JSON (JavaScript Object Notation), que permite una estructura de datos más flexible comparada con las bases de datos relacionales tradicionales. Los documentos pueden contener muchos tipos de datos anidados y no necesitan seguir un esquema rígido. Esto hace que las bases de datos de documentos sean ideales para aplicaciones que requieren gran flexibilidad y velocidad para manejar datos con estructuras variadas.
+
+# 23. Dynamo DB
+
+Amazon DynamoDB es un servicio de base de datos NoSQL ofrecido por Amazon Web Services (AWS) que proporciona rendimiento a velocidad de rayo con escalabilidad y fiabilidad sin igual. Está diseñado para garantizar una latencia de milisegundos de un solo dígito en cualquier escala y manejar más de 10 billones de solicitudes por día. Es una base de datos completamente gestionada, lo que significa que AWS se encarga de tareas como el mantenimiento del servidor, las actualizaciones de software, y el escalamiento.
+
+**Características Clave de DynamoDB**
+
+**1. Rendimiento y Escalabilidad:**
+
+DynamoDB puede escalar automáticamente para ajustarse a las cargas de trabajo, utilizando su característica de escalamiento automático para ajustar la capacidad de acuerdo a las necesidades del tráfico en tiempo real. Esto asegura que la base de datos puede manejar picos de tráfico repentinos sin degradación del rendimiento.
+
+**2. Modelo de Datos NoSQL:**
+
+Como una base de datos NoSQL, DynamoDB utiliza un modelo de datos clave-valor y documentos. Esto permite una flexibilidad significativa en términos de los datos que puede almacenar y cómo se pueden recuperar.
+
+**3. Alta Disponibilidad y Durabilidad:**
+
+DynamoDB está diseñado para replicar datos automáticamente a través de tres zonas de disponibilidad en una región de AWS, proporcionando alta disponibilidad y protección de datos contra la pérdida de un servidor o incluso de todo un centro de datos.
+
+**4. Latencia Baja:**
+
+Ofrece tiempos de respuesta de milisegundos de un solo dígito, lo que la hace ideal para aplicaciones de respuesta rápida como juegos móviles, tecnologías publicitarias, o sistemas financieros.
+
+**5. Seguridad:**
+
+Integra controles de seguridad que permiten encriptación en reposo y en tránsito, gestión de acceso fino a través de AWS IAM (Identity and Access Management), y otras medidas de seguridad para proteger y controlar el acceso a los datos.
+
+**6. Backup y Restauración:**
+
+DynamoDB proporciona capacidades de backup y restauración. Los backups son consistentes en el punto en el tiempo y no impactan el rendimiento de las aplicaciones cliente.
+
+**7. Integraciones de AWS:**
+
+Se integra bien con otros servicios de AWS, como Amazon Lambda, para realizar procesamiento de datos en tiempo real, y Amazon S3 para análisis de grandes volúmenes de datos con Amazon Redshift.
+
+# 24. Amazon MemoryDB
+
+Amazon MemoryDB for Redis es un servicio de base de datos en memoria totalmente gestionado ofrecido por AWS que es compatible con Redis, un popular almacén de datos en memoria de código abierto. MemoryDB se diseñó para ofrecer un rendimiento extremadamente rápido, almacenamiento de datos duradero y altamente disponible, facilitando el uso de Redis sin las complicaciones de administrar la infraestructura subyacente.
+
+**Usos Comunes de Amazon MemoryDB**
+
+**Caché de Aplicaciones:** MemoryDB es comúnmente utilizado como una caché para reducir la carga en bases de datos tradicionales, almacenando resultados de consultas frecuentes o datos de sesión de usuario.
+
+**Almacenamiento de Estado de Sesión:** Ideal para aplicaciones web y móviles donde el estado del usuario necesita ser almacenado y recuperado rápidamente a lo largo de múltiples sesiones.
+
+**Colas de Mensajes:** Se puede utilizar para implementar colas de mensajes en memoria para asegurar el procesamiento rápido de tareas en aplicaciones distribuidas.
+
+**Tablas de Líderes y Contadores en Tiempo Real:** Utilizado en juegos online y aplicaciones sociales para mantener tablas de líderes en tiempo real y otros contadores dinámicos.
+
+# 25. RDS
+
+Entrando en RDS y dando click en "Crear base de datos" veremos una serie de opciones de motores de base de datos
+
+![](imagenes/20.PNG)
+
+Tenemos dos opciones relacionadas con la configuración de Amazon RDS (Relational Database Service), específicamente para mejorar la disponibilidad y el rendimiento de las bases de datos en AWS.
+
+1. Mostrar las versiones compatibles con el clúster de base de datos multi-AZ
+
+Esta opción permite crear un clúster de base de datos en configuración Multi-AZ, que significa Múltiples Zonas de Disponibilidad. Un clúster Multi-AZ consta de una instancia de base de datos principal y dos instancias de base de datos en espera que se sitúan en zonas de disponibilidad diferentes.
+
+**Beneficios:**
+
+- Alta disponibilidad: Al tener réplicas en diferentes zonas de disponibilidad, se asegura que la base de datos pueda continuar operando sin interrupciones en caso de que una zona experimente fallos.
+- Conmutación por error automática: Si la instancia principal falla, Amazon RDS automáticamente conmutará a una de las instancias de réplica en menos de 35 segundos, garantizando así mínima interrupción del servicio.
+- Mejor rendimiento de lectura: Al tener múltiples réplicas, se puede dirigir el tráfico de lectura hacia las instancias secundarias, lo que reduce la carga en la instancia principal y mejora el rendimiento de la base de datos.
+
+2. Mostrar versiones compatibles con las escrituras optimizadas de Amazon RDS
+
+Esta opción refiere a una característica de optimización de escrituras que mejora el rendimiento de las operaciones de escritura en la base de datos.
+
+**Beneficios:**
+
+- Mejora del rendimiento de escritura: Según la descripción, esta característica puede mejorar el rendimiento de las operaciones de escritura hasta dos veces sin ningún costo adicional.
+- Costo-eficiencia: Al mejorar el rendimiento sin costos adicionales, se maximiza la eficiencia del sistema mientras se controlan los gastos operativos.
+
+![](imagenes/21.PNG)
+
+En las plantillas elejimos la capa gratuita, lueg le ponemos un nombre a nuestra instancia de basde de datos, le ponemos un nombre de usuario maestro y le creamos una contraseña maestra.
+
+![](imagenes/22.PNG)
+
+# 26. Conectividad
+
+![](imagenes/23.PNG)
+
+# 27. Costos
+
+A pesar de que estamos en la capa gratuita AWS nos cobra un monto minimo, que luego para que no nos cobre debemos desactivarlo
+
+![](imagenes/24.PNG)
+
+# 28. Planet Scale
+
+PlanetScale es una plataforma de base de datos compatible con MySQL diseñada para proporcionar escalabilidad, rendimiento y confiabilidad sin comprometer la experiencia del desarrollador. Utiliza Vitess, una tecnología de base de datos de código abierto inicialmente desarrollada en YouTube para manejar grandes volúmenes de datos y usuarios. Esto permite a PlanetScale ofrecer características como el sharding horizontal y cambios de esquema no bloqueantes, lo cual es ideal para empresas que necesitan manejar grandes bases de datos sin sufrir tiempos de inactividad durante las actualizaciones o mantenimientos.
+
+https://planetscale.com/
+
+# 29. S3
+
+Amazon S3 (Simple Storage Service) es un servicio de almacenamiento en la nube ofrecido por Amazon Web Services (AWS). Proporciona un almacenamiento de objetos escalable, de alta disponibilidad y bajo costo, diseñado para almacenar y recuperar cualquier cantidad de datos desde cualquier lugar de Internet. Es ampliamente utilizado para una variedad de aplicaciones, desde sitios web y aplicaciones móviles hasta aplicaciones empresariales y de big data.
+
+![](imagenes/25.PNG)
+
+**Características Principales de Amazon S3**
+
+- Almacenamiento de Objetos: S3 almacena datos como objetos dentro de contenedores llamados "buckets". Cada objeto se identifica de forma única dentro de un bucket mediante una clave asignada por el usuario.
+
+- Durabilidad y Disponibilidad: Amazon S3 ofrece una durabilidad del 99.999999999% (11 nueves), lo que garantiza que los datos están seguros y protegidos. Además, ofrece varias opciones de almacenamiento que varían en términos de costo, disponibilidad y frecuencia de acceso.
+
+- Seguridad: S3 proporciona controles avanzados de seguridad, como políticas de bucket y Control de Acceso basado en Roles (IAM) para gestionar quién puede acceder a los datos. También soporta el cifrado de datos en reposo y en tránsito.
+
+- Escalabilidad: Puedes almacenar y recuperar cualquier cantidad de datos en cualquier momento. S3 se escala automáticamente para manejar picos en la carga de trabajo sin necesidad de intervención manual.
+
+- Gestión de Datos: Ofrece características como el versionado, para mantener múltiples versiones del mismo objeto; ciclo de vida de los datos, para automatizar el archivado o eliminación de objetos; y transferencia de datos optimizada, utilizando diversas herramientas de transferencia de AWS.
+
+- Integración: Se integra con otros servicios de AWS, como Amazon Glacier para el archivado a largo plazo, AWS Lambda para ejecutar código en respuesta a eventos de S3, y Amazon EMR (Elastic MapReduce) para el procesamiento de big data.
+
+**Usos Comunes de Amazon S3**
+
+- Backup y Recuperación: Ideal para realizar backups de datos críticos y recuperarlos cuando sea necesario.
+
+- Alojamiento de Sitios Web Estáticos: Puedes utilizar S3 para almacenar y servir sitios web estáticos, que contienen HTML, CSS y archivos JavaScript.
+
+- Almacenamiento de Medios: Utilizado por aplicaciones de streaming para almacenar y distribuir contenido multimedia, como videos, música y imágenes.
+
+- Archivado de Datos: Para empresas que necesitan archivar datos históricos de forma segura y económica.
+
+- Big Data y Análisis: Utilizado como repositorio de datos para grandes volúmenes de datos analíticos que requieren procesamiento por servicios como AWS Athena o Amazon Redshift.
+
+# 30. Creando un bucket
+
+![](imagenes/26.PNG)
+
+![](imagenes/27.PNG)
+
+# 31. Propiedad de objetos
+
+![](imagenes/28.PNG)
+
+# 32. Configuracion de bloqueo de acceso publico
+
+![](imagenes/29.PNG)
+
+# 33. Control de versiones de buckets, etiquetas
+
+![](imagenes/30.PNG)
+
+# 34. Cifrado predeterminado
+
+![](imagenes/31.PNG)
+
+![](imagenes/32.PNG)
+
+![](imagenes/33.PNG)
+
+# 35. Creando una carpeta
+
+![](imagenes/34.PNG)
+
+# 36. Cargando una imagen
+
+![](imagenes/35.PNG)
+
+# 37. Clase de almacenamiento
+
+![](imagenes/36.PNG)
+
+![](imagenes/37.PNG)
+
+# 38. Error tipico en S3
+
+![](imagenes/38.PNG)
+
+# 39. Politica de bucket
+
+![](imagenes/39.PNG)
