@@ -468,3 +468,73 @@ Amazon S3 (Simple Storage Service) es un servicio de almacenamiento en la nube o
 # 39. Politica de bucket
 
 ![](imagenes/39.PNG)
+
+Tenemos el acceso publico pero debemos tener una politica.
+Nos vamos a ver algunos ejemplos de politicas:
+ 
+ https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html?icmpid=docs_amazons3_console
+
+ Adaptamos ese ejemplo segun nuertros requerimientos y eso ira como politica, luego guardamos los cambios:
+
+ ![](imagenes/40.PNG)
+
+ Con eso ya podriamos visualizar la imagen que hemos cargado
+
+# 40. Desplegar una pagina web entera
+# 41. Configurar las llaves
+# 42. Creando un usuario
+
+Nos vamos al servicio de AWS "iam" y luego nos vamos a usuarios y creamos un usuario:
+
+![](imagenes/41.PNG)
+
+![](imagenes/42.PNG)
+
+Establecemos permisos y creamos el usuario
+
+![](imagenes/43.PNG)
+
+# 43. Clave de acceso
+
+Entramos al usuario creado y creamos una clave de acceso:
+
+![](imagenes/44.PNG)
+
+![](imagenes/45.PNG)
+
+# 44. Configurando claves
+
+![](imagenes/46.PNG)
+
+# 45. Deploy para la web
+# 46. Mejorando el rendimiento
+
+Subimos los archivos al buckets con: aws s3 sync ./dist s3://(nombre del recurso de amazon)
+
+![](imagenes/47.PNG)
+
+Verificamos que se ha cargado el proyecto correctamente
+
+![](imagenes/48.PNG)
+
+![](imagenes/49.PNG)
+
+En propiedades-> Alojamiento de sitios web estaticos configuramos para poder alojar nuestros sitios web: 
+
+https://us-east-2.console.aws.amazon.com/s3/buckets/walter-aws-demo-s3?region=us-east-2&bucketType=general&tab=properties
+
+# 47. Reglas de redireccionamiento (SPA)
+
+No es necesario configurar reglas de redireccionamiento.
+
+Al configurar lo basico y guardar los cambios ya tenemos alojada el sitio web: 
+
+![](imagenes/50.PNG)
+
+# 48. ¿Y si hacemos cambios en nuestro proyecto?
+
+Dentro de nuestro proyecto configuramos el deploy y modificamos algun archivo para ver los cambios: 
+
+![](imagenes/51.PNG)
+
+![](imagenes/52.PNG)
