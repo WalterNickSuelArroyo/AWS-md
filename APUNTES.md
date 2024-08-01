@@ -538,3 +538,115 @@ Dentro de nuestro proyecto configuramos el deploy y modificamos algun archivo pa
 ![](imagenes/51.PNG)
 
 ![](imagenes/52.PNG)
+
+# 49. Lambda
+
+Amazon Lambda, más conocido como AWS Lambda, es un servicio de computación sin servidor ofrecido por Amazon Web Services (AWS) que permite ejecutar código en respuesta a eventos sin necesidad de gestionar servidores. AWS Lambda maneja automáticamente la administración de la infraestructura, incluida la capacidad de cómputo, el mantenimiento de servidores, el balanceo de carga, y el escalado automático.
+
+**Características Principales de AWS Lambda**
+
+- Basado en Eventos: AWS Lambda se activa automáticamente en respuesta a eventos provenientes de otros servicios de AWS o aplicaciones directas. Esto incluye eventos como cambios en archivos en S3, actualizaciones en tablas de DynamoDB, solicitudes HTTP a través de Amazon API Gateway, entre otros.
+
+- Gestión Automática de la Infraestructura: Lambda gestiona todos los aspectos de la infraestructura de cómputo, permitiendo que te enfoques en escribir código en lugar de administrar servidores. Esto incluye el mantenimiento de la máquina, configuración del sistema operativo, parches de seguridad, escalado y más.
+
+- Facturación por Uso: Solo pagas por el tiempo de cómputo que consumes, medido en milisegundos y por la cantidad de veces que tu función es invocada. Esto hace que Lambda sea un servicio económico para muchos escenarios de uso.
+
+- Lenguajes de Programación Soportados: AWS Lambda soporta múltiples lenguajes de programación, incluyendo Node.js, Python, Ruby, Java, Go, .NET Core y PowerShell.
+
+- Integraciones: Se integra de forma nativa con otros servicios de AWS para crear aplicaciones poderosas y escalables que reaccionan rápidamente a nuevos datos o eventos.
+
+**Usos Comunes de AWS Lambda**
+
+- Procesamiento de Datos: Puede ser usado para realizar transformaciones de datos en tiempo real, como filtrar, clasificar y otros procesamientos de datos provenientes de servicios como Amazon S3 o DynamoDB.
+
+- Backends de Aplicaciones Web y Móviles: Lambda puede servir como un backend escalable para aplicaciones web y móviles al responder a solicitudes HTTP a través de Amazon API Gateway.
+
+- Automatización de Tareas: Automatizar tareas administrativas y de mantenimiento, como realizar backups automáticos, monitorizar recursos y responder a alertas de estado.
+
+- IoT (Internet de las Cosas): Puede procesar y gestionar rápidamente las solicitudes y los datos generados por dispositivos IoT conectados a AWS IoT Core.
+
+# 50. Creando una Lambda
+
+Damos clic en crear una funcion:
+
+![](imagenes/53.PNG)
+
+![](imagenes/54.PNG)
+
+Le damos en test
+
+![](imagenes/55.PNG)
+
+![](imagenes/56.PNG)
+
+Le damos en test nuevamente
+
+![](imagenes/57.PNG)
+
+# 51. Testeando
+# 52. Código
+
+![](imagenes/58.PNG)
+
+Luego de realizar el deploy y volver a ejecutar el test obtenemos la respuesta
+
+![](imagenes/59.PNG)
+
+![](imagenes/60.PNG)
+
+![](imagenes/61.PNG)
+
+![](imagenes/62.PNG)
+
+# 53. Monitorizacion
+
+La sección de monitorización en AWS Lambda sirve para observar y analizar el rendimiento y la actividad de tus funciones Lambda. Aquí se resumen algunas de las principales funcionalidades que proporciona esta sección:
+
+1. Visualización de métricas: Puedes ver métricas clave como el número de invocaciones, la duración de las ejecuciones, los errores, la concurrencia y las iteraciones en frío. Estas métricas son útiles para entender cómo se están desempeñando tus funciones y para identificar problemas o cuellos de botella.
+
+2. Alarmas: Puedes configurar alarmas basadas en métricas específicas. Por ejemplo, podrías establecer una alarma para recibir notificaciones cuando el número de errores sobrepase un umbral determinado. Esto es esencial para la gestión proactiva y la respuesta rápida a posibles problemas.
+
+3. Registros: En esta sección también puedes acceder a los registros generados por tus funciones Lambda. AWS Lambda automáticamente integra con Amazon CloudWatch Logs, donde cada invocación de tu función genera un stream de registros. Esto es crucial para depurar y rastrear el comportamiento de tus funciones.
+
+4. Rastreo: Con la integración de AWS X-Ray, puedes habilitar el rastreo para analizar y depurar las arquitecturas de microservicios. Esto te permite ver cómo las peticiones atraviesan tus funciones y otros servicios AWS, ayudándote a identificar ineficiencias y puntos de fallo.
+
+La monitorización es una herramienta clave para asegurar que las funciones Lambda operan eficientemente y sin errores, permitiendo optimizar el rendimiento y la escalabilidad de tus aplicaciones.
+
+![](imagenes/63.PNG)
+
+![](imagenes/64.PNG)
+
+![](imagenes/65.PNG)
+
+![](imagenes/66.PNG)
+
+![](imagenes/67.PNG)
+
+# 54. Desencadenadores
+
+![](imagenes/68.PNG)
+
+# 55. Usar como url
+
+![](imagenes/69.PNG)
+
+![](imagenes/70.PNG)
+
+![](imagenes/71.PNG)
+
+# 56. Conectandose a la base de datos
+
+![](imagenes/72.PNG)
+
+![](imagenes/73.PNG)
+
+![](imagenes/74.PNG)
+
+# 57. Eliminando base de datos
+
+![](imagenes/75.PNG)
+
+![](imagenes/76.PNG)
+
+# 58. ¿Cuanto dinero debo pagar?
+# 59. Certificacion de AWS
